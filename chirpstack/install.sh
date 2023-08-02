@@ -43,7 +43,7 @@ rm -f /tmp/init_sql.sql
 #3.1 install https requirements
 #apt -f -y install apt-transport-https dirmngr
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1CE2AFD36DBCCA00
-echo "deb https://artifacts.chirpstack.io/packages/3.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
+echo "deb https://artifacts.chirpstack.io/packages/4.x/deb stable main" | sudo tee /etc/apt/sources.list.d/chirpstack.list
 apt update
 apt install chirpstack-network-server
 apt install chirpstack-gateway-bridge
